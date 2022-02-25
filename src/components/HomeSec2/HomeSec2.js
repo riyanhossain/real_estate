@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import home2 from "../../Images/content1.png";
 import "./HomeSec2.css";
+import HS21 from "./HS21/HS21";
 
 function HomeSec2() {
   return (
@@ -25,6 +26,12 @@ function HomeSec2() {
           </section>
         </Col>
       </Row>
+      <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+      <section style={{width:'80vw'}}>
+        <HS21/>
+      </section>
+      </div>
+
     </div>
   );
 }
