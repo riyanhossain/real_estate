@@ -1,0 +1,19 @@
+.homeBtn {
+  background-color: black;
+  border: #ffac12;
+  border-top-right-radius: 18px;
+  width: 209px;
+  color: white;
+  font-size: small;
+  padding: 15px;
+}
+h3 {
+  border-top: 5px solid;
+  width: 30%;
+  border-image: linear-gradient(45deg, #ffac12, rgb(0, 0, 0));
+  border-image-slice: 1;
+}
+.imgHome2 {
+  width: 704px;
+  height: 657px;
+}

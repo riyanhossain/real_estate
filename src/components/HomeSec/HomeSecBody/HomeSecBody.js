@@ -17,6 +17,9 @@ function HomeSecBody() {
         </Col>
         <Col></Col>
       </Row>
+      <div style={{display: 'flex',alignItems:'center',height:'80px',backgroundColor:'white',marginTop:'6%'}} className='bottomDV'>
+        <h5 style={{marginLeft:'8%'}}>See all Listing</h5>
+      </div>
     </div>
   );
 }
