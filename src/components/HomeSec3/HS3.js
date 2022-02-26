@@ -13,6 +13,7 @@ import grid3 from "../../Images/grid3.png";
 import grid4 from "../../Images/grid4.png";
 import grid5 from "../../Images/grid5.png";
 import grid6 from "../../Images/grid6.png";
+import './HS3.css'
 
 function HS3() {
   const images = [grid1, grid2, grid3, grid4, grid5, grid6];
@@ -26,9 +27,9 @@ function HS3() {
       }}
     >
       <section style={{ width: "60vw" }}>
-        <Grid>
-          <Grid item xs={2} sm={4} md={4}>
-            {images.map((gd) => (
+        <Grid container item spacing={3}>
+          {images.map((gd) => (
+            <Grid  item xs={2} sm={4} md={4} >
               <Card sx={{ maxWidth: 345 }}>
                 <CardActionArea>
                   <CardMedia
@@ -49,8 +50,8 @@ function HS3() {
                   </CardContent>
                 </CardActionArea>
               </Card>
-            ))}
-          </Grid>
+            </Grid>
+          ))}
         </Grid>
       </section>
     </div>
