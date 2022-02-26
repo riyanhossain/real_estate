@@ -26,12 +26,17 @@ function HomeSec2() {
           </section>
         </Col>
       </Row>
-      <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
-      <section style={{width:'80vw'}}>
-        <HS21/>
-      </section>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <section style={{ width: "60vw" }}>
+          <HS21 />
+        </section>
       </div>
-
     </div>
   );
 }
