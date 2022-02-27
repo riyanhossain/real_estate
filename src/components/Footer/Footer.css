@@ -1,0 +1,19 @@
+.footBtn{
+    background-color: #FFAC12 ;
+    border: #FFAC12;
+    border-top-right-radius: 18px;
+    width: 131px;
+}
+.footLine{
+    border-bottom: 1px solid white;
+    margin-top: 4%;
+    opacity: 0.1;
+    width: 70vw;
+}
+.h3Line{
+    color: white;
+    font-weight: bold;
+}
+.reality{
+    color: #FFAC12;
+}

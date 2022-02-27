@@ -1,18 +1,21 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import home2 from "../../Images/content1.png";
-import "./HomeSec2.css";
-import HS21 from "./HS21/HS21";
+import content from "../../Images/content1.png";
+import '../HomeSec2/HomeSec2.css'
 
-function HomeSec2() {
+function HS4() {
   return (
-    <div>
+    <div style={{marginTop:'10%'}}>
       <Row>
-        <Col style={{background: 'linear-gradient(to bottom, white 0%,#f5f5f5 100%)'}}>
-          <img src={home2} alt="" srcset="" className="imgHome2" />
-        </Col>
-        <Col style={{ display: "flex", alignItems: "center",backgroundColor:'white',marginBottom:'15%' }}>
-          <section>
+      <Col
+          style={{
+            display: "flex",
+            alignItems: "center",
+            backgroundColor: "white",
+            marginTop: "8%"
+          }}
+        >
+          <section style={{marginLeft: '15%'}}>
             <h3 className="line"></h3>
             <h1>You’re in good hands</h1>
             <p style={{ width: "50%" }}>
@@ -25,20 +28,17 @@ function HomeSec2() {
             <button className="homeBtn">Learn more</button>
           </section>
         </Col>
+        <Col
+          style={{
+            background: "linear-gradient(to top, white 0%,#f5f5f5 100%)",
+          }}
+        >
+          <img src={content} alt="" srcset="" className="imgHome2" />
+        </Col>
+
       </Row>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <section style={{ width: "70vw" }}>
-          <HS21 />
-        </section>
-      </div>
     </div>
   );
 }
 
-export default HomeSec2;
+export default HS4;

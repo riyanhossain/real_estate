@@ -14,7 +14,7 @@ export default function DropSelect() {
 
   return (
     <div>
-      <FormControl sx={{ m: 1, minWidth: 250 }}>
+      <FormControl sx={{ m: 1, minWidth: 220 }}>
         <InputLabel id="demo-simple-select-helper-label">
           <strong style={{color:'black'}}>Looking For</strong>
         </InputLabel>

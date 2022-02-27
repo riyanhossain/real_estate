@@ -7,7 +7,7 @@
   font-size: small;
   padding: 15px;
 }
-h3 {
+.line {
   border-top: 5px solid;
   width: 30%;
   border-image: linear-gradient(45deg, #ffac12, rgb(0, 0, 0));
@@ -16,4 +16,5 @@ h3 {
 .imgHome2 {
   width: 704px;
   height: 657px;
+  position: sticky;
 }
