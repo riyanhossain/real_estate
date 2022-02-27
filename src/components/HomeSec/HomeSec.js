@@ -7,10 +7,8 @@ import HomeSecBody from "./HomeSecBody/HomeSecBody";
 function HomeSec() {
   return (
     <div className="HomeSec">
-      <Container>
-        <NavB />
+        <NavB/>
         <HomeSecBody/>
-      </Container>
     </div>
   );
 }

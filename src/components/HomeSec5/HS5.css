@@ -1,0 +1,17 @@
+.line2 {
+    border-top: 5px solid;
+    width: 50%;
+    border-image: linear-gradient(45deg, #ffac12, rgb(0, 0, 0));
+    border-image-slice: 1;
+  }
+  .newBtn {
+    background-color:#ffac12;
+    ;
+    border: #ffac12;
+    border-top-right-radius: 18px;
+    width: 209px;
+    color: black;
+    font-size: small;
+    padding: 15px;
+    font-weight: bold;
+  }
