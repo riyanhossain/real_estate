@@ -94,7 +94,7 @@ function HS3() {
         marginTop: "5%",
       }}
     >
-      <section style={{ width: "70vw" }}>
+      <section style={{ width: "75%" }}>
         <Grid container item spacing={3}>
           {houses.map((gd) => (
             <Grid item xs={4} sm={4} md={4}>

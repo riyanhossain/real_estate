@@ -33,7 +33,7 @@ function HomeSec2() {
           justifyContent: "center",
         }}
       >
-        <section style={{ width: "70vw" }}>
+        <section style={{ width: "75%" }}>
           <HS21 />
         </section>
       </div>

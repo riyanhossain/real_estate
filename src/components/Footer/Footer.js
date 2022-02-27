@@ -15,7 +15,7 @@ function Footer() {
         <div
           style={{
             display: "flex",
-            width: "70vw",
+            width: "70%",
             flexWrap: "nowrap",
             marginTop: "5%",
             justifyContent: "space-between",
