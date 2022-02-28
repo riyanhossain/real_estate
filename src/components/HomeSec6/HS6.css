@@ -1,0 +1,15 @@
+.line3 {
+    border-top: 5px solid;
+    width: 100%;
+    border-image: linear-gradient(45deg, #ffac12, #ffa602);
+    border-image-slice: 1;
+  }
+  .line4 {
+    border-top: 5px solid;
+    width: 100%;
+    border-image: linear-gradient(45deg, #2c2b2b, rgb(0, 0, 0));
+    border-image-slice: 1;
+  }
+  p{
+      margin-top: 1rem !important;
+  }
