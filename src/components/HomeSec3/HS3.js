@@ -21,10 +21,13 @@ import BathroomIcon from '@mui/icons-material/Bathroom';
 import BedroomParentIcon from '@mui/icons-material/BedroomParent';
 import KitchenIcon from '@mui/icons-material/Kitchen';
 import { Col } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
 
 function HS3() {
+  let navigate=useNavigate();
   const houses = [
     {
+      id:'mato',
       title: "Mato House",
       image: grid1,
       car: 3,
@@ -35,6 +38,7 @@ function HS3() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit non.Lorem ipsum dolor.",
     },
     {
+      id:'envo',
       title: "Envo House",
       image: grid2,
       car: 4,
@@ -45,6 +49,7 @@ function HS3() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, provident quo!",
     },
     {
+      id:3,
       title: "Roatolo House",
       image: grid3,
       car: 1,
@@ -55,6 +60,7 @@ function HS3() {
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus.",
     },
     {
+      id:4,
       title: "Halo House",
       image: grid4,
       car: 3,
@@ -65,6 +71,7 @@ function HS3() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, ad.",
     },
     {
+      id:5,
       title: "Hellfire House",
       image: grid5,
       car: 5,
@@ -75,6 +82,7 @@ function HS3() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel  eligendi dolores.",
     },
     {
+      id:6,
       title: "Wallbroke House",
       image: grid6,
       car: 3,
@@ -99,7 +107,7 @@ function HS3() {
           {houses.map((gd) => (
             <Grid item xs={4} sm={4} md={4}>
               <Card sx={{ maxWidth: 345 }}>
-                <CardActionArea>
+                <CardActionArea onClick={()=>navigate(`/${gd.id}`)}>
                   <CardMedia
                     component="img"
                     height="266"
