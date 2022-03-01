@@ -9,7 +9,7 @@ function HomeSec2() {
     <div>
       <Row>
         <Col style={{background: 'linear-gradient(to bottom, white 0%,#f5f5f5 100%)'}}>
-          <img src={home2} alt="" srcset="" className="imgHome2" />
+          <img src={home2} alt="" className="imgHome2" />
         </Col>
         <Col style={{ display: "flex", alignItems: "center",backgroundColor:'white',marginBottom:'15%' }}>
           <section>

@@ -33,7 +33,7 @@ function HS4() {
             background: "linear-gradient(to top, white 0%,#f5f5f5 100%)",
           }}
         >
-          <img src={content} alt="" srcset="" className="imgHome2" />
+          <img src={content} alt="" className="imgHome2" />
         </Col>
 
       </Row>
