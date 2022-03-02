@@ -6,7 +6,9 @@ import BathroomIcon from "@mui/icons-material/Bathroom";
 import BedroomParentIcon from "@mui/icons-material/BedroomParent";
 import KitchenIcon from "@mui/icons-material/Kitchen";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
-import './H1.css'
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import "./H1.css";
+import HS3 from "../../../HomeSec3/HS3";
 
 function H1S2(props) {
   const { images, image } = props.h1;
@@ -15,6 +17,9 @@ function H1S2(props) {
     setImageQ(i);
   };
   return (
+    <div>
+
+
     <div
       style={{
         display: "flex",
@@ -45,7 +50,7 @@ function H1S2(props) {
               borderRadius: "20px",
             }}
           >
-            <h4 style={{ paddingTop:'30px',marginLeft: '40px' }}>Details</h4>
+            <h4 style={{ paddingTop: "30px", marginLeft: "40px" }}>Details</h4>
             <div
               style={{
                 display: "flex",
@@ -116,32 +121,132 @@ function H1S2(props) {
               borderRadius: "20px",
             }}
           >
-            <div  >
+            <div>
               <h4 className="desCrip">Description</h4>
 
-
-            <p className="desCrip">
-              At vero eos et iusto odio dignissimos ducimus, qui haec putat, ut
-              ipsi auctori huius disciplinae placet: constituam, quid sit
-              numeranda nec me ab illo inventore veritatis et expedita
-              distinctio nam libero tempore, cum memoriter, tum etiam ac
-              ratione.
-              <br />
-              <br />
-              Si sine metu degendae praesidia firmissima filium morte multavit
-              si sine causa? quae fuerit causa, mox videro; interea hoc tenebo,
-              si ob rem voluptas assumenda est, quid sit extremum et inter
-              mediocrem animadversionem atque natum sit, a natura incorrupte.
-              <br />
-              <br />
-              Omne animal, simul atque in sanguinem suum tam inportuno tamque
-              crudeli; sin, ut earum motus et accusamus et argumentandum et
-              dolore suo sanciret militaris imperii disciplinam exercitumque in
-              liberos atque haec ratio late patet in quo pertineant non possim.
-            </p>
+              <p className="desCrip">
+                At vero eos et iusto odio dignissimos ducimus, qui haec putat,
+                ut ipsi auctori huius disciplinae placet: constituam, quid sit
+                numeranda nec me ab illo inventore veritatis et expedita
+                distinctio nam libero tempore, cum memoriter, tum etiam ac
+                ratione.
+                <br />
+                <br />
+                Si sine metu degendae praesidia firmissima filium morte multavit
+                si sine causa? quae fuerit causa, mox videro; interea hoc
+                tenebo, si ob rem voluptas assumenda est, quid sit extremum et
+                inter mediocrem animadversionem atque natum sit, a natura
+                incorrupte.
+                <br />
+                <br />
+                Omne animal, simul atque in sanguinem suum tam inportuno tamque
+                crudeli; sin, ut earum motus et accusamus et argumentandum et
+                dolore suo sanciret militaris imperii disciplinam exercitumque
+                in liberos atque haec ratio late patet in quo pertineant non
+                possim.
+              </p>
             </div>
+
           </div>
+          <div
+              style={{
+                height: "394px",
+                marginTop: "15%",
+                backgroundColor: "white",
+                borderRadius: "20px",
+              }}
+            >
+              <h4 className="desCrip">Features</h4>
+
+              <div style={{display:'flex',alignItems:'center',marginLeft:'40px'}}>
+                <Col>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                </Col>
+                <Col>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                </Col>
+                <Col>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                <div style={{display:'flex',alignItems:'center'}}>
+                <CheckCircleIcon/>
+                <p style={{marginLeft:'10px'}}>Air Condition</p>
+
+                </div>
+                </Col>
+
+              </div>
+              
+            </div>
+
         </Col>
+
         <Col xs={4}>
           <TextField id="standard-basic" label="Standard" variant="standard" />
           <TextField id="standard-basic" label="Standard" variant="standard" />
@@ -149,6 +254,9 @@ function H1S2(props) {
           <TextField id="standard-basic" label="Standard" variant="standard" />
         </Col>
       </div>
+    </div>
+    <h2>Similar listings</h2>
+    <HS3/>
     </div>
   );
 }
