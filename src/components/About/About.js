@@ -4,7 +4,6 @@ import { dataContext } from '../../App';
 import Footer from '../Footer/Footer';
 import H1S2 from './H1S2';
 import NewPageSec1 from './NewPageSec1';
-import NewPageSec2 from './NewPageSec2';
 
 function About() {
     let {id}=useParams();

@@ -1,9 +1,8 @@
-import React, { createContext } from "react";
+import React, { createContext, useState } from "react";
 import "./App.css";
 import Home from "./components/Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import home1 from "./Images/grid1.png";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import rec1 from "./Images/Rectangle1.png";
 import rec2 from "./Images/Rectangle2.png";
 import rec3 from "./Images/Rectangle3.png";
@@ -36,9 +35,9 @@ function App() {
           "Lorem ipsum dolor sit amet consectetur adipisicing elit non.Lorem ipsum dolor.",
         long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laborum aspernatur ipsa! Corporis iure modi architecto nam labore similique. Nesciunt nam provident voluptate, mollitia quam reiciendis magnam ea accusantium. Vitae provident nisi deleniti. Recusandae eligendi voluptates, nam sequi, adipisci ipsam quibusdam quaerat consectetur magni inventore aliquid sint ipsum quos delectus eum laudantium expedita exercitationem. Alias fugiat recusandae eaque repellat quia.",
       },
-      price: "$450000",
-      address: "3002 Foster Ave, Brooklyn, NY 11210, USA",
-      space: "$2,800/sq ft",
+      price: "$400000",
+      address: "30020 Foster Ave, Brooklyn, NY 11210, USA",
+      space: "$2,400/sq ft",
     },
     {
       id: 1,
@@ -49,15 +48,15 @@ function App() {
       bath: 3,
       bed: 3,
       kitchen: 2,
-      build: 2011,
+      build: 2007,
       Description: {
         short:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit non.Lorem ipsum dolor.",
         long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laborum aspernatur ipsa! Corporis iure modi architecto nam labore similique. Nesciunt nam provident voluptate, mollitia quam reiciendis magnam ea accusantium. Vitae provident nisi deleniti. Recusandae eligendi voluptates, nam sequi, adipisci ipsam quibusdam quaerat consectetur magni inventore aliquid sint ipsum quos delectus eum laudantium expedita exercitationem. Alias fugiat recusandae eaque repellat quia.",
       },
-      price: "$450000",
-      address: "3002 Foster Ave, Brooklyn, NY 11210, USA",
-      space: "$2,800/sq ft",
+      price: "$650000",
+      address: "3012 Foster Ave, Brooklyn, NY 11210, USA",
+      space: "$3,800/sq ft",
     },
     {
       id: 2,
@@ -68,15 +67,15 @@ function App() {
       bath: 1,
       bed: 2,
       kitchen: 1,
-      build: 2011,
+      build: 2021,
       Description: {
         short:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit non.Lorem ipsum dolor.",
         long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laborum aspernatur ipsa! Corporis iure modi architecto nam labore similique. Nesciunt nam provident voluptate, mollitia quam reiciendis magnam ea accusantium. Vitae provident nisi deleniti. Recusandae eligendi voluptates, nam sequi, adipisci ipsam quibusdam quaerat consectetur magni inventore aliquid sint ipsum quos delectus eum laudantium expedita exercitationem. Alias fugiat recusandae eaque repellat quia.",
       },
-      price: "$450000",
-      address: "3002 Foster Ave, Brooklyn, NY 11210, USA",
-      space: "$2,800/sq ft",
+      price: "$350000",
+      address: "3022 Foster Ave, Brooklyn, NY 11210, USA",
+      space: "$1,800/sq ft",
     },
     {
       id: 3,
@@ -87,15 +86,15 @@ function App() {
       bath: 3,
       bed: 4,
       kitchen: 2,
-      build: 2011,
+      build: 2001,
       Description: {
         short:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit non.Lorem ipsum dolor.",
         long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laborum aspernatur ipsa! Corporis iure modi architecto nam labore similique. Nesciunt nam provident voluptate, mollitia quam reiciendis magnam ea accusantium. Vitae provident nisi deleniti. Recusandae eligendi voluptates, nam sequi, adipisci ipsam quibusdam quaerat consectetur magni inventore aliquid sint ipsum quos delectus eum laudantium expedita exercitationem. Alias fugiat recusandae eaque repellat quia.",
       },
-      price: "$450000",
-      address: "3002 Foster Ave, Brooklyn, NY 11210, USA",
-      space: "$2,800/sq ft",
+      price: "$550000",
+      address: "3010 Foster Ave, Brooklyn, NY 11210, USA",
+      space: "$2,500/sq ft",
     },
     {
       id: 4,
@@ -106,15 +105,15 @@ function App() {
       bath: 3,
       bed: 4,
       kitchen: 3,
-      build: 2011,
+      build: 2017,
       Description: {
         short:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit non.Lorem ipsum dolor.",
         long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laborum aspernatur ipsa! Corporis iure modi architecto nam labore similique. Nesciunt nam provident voluptate, mollitia quam reiciendis magnam ea accusantium. Vitae provident nisi deleniti. Recusandae eligendi voluptates, nam sequi, adipisci ipsam quibusdam quaerat consectetur magni inventore aliquid sint ipsum quos delectus eum laudantium expedita exercitationem. Alias fugiat recusandae eaque repellat quia.",
       },
-      price: "$450000",
-      address: "3002 Foster Ave, Brooklyn, NY 11210, USA",
-      space: "$2,800/sq ft",
+      price: "$600000",
+      address: "3042 Foster Ave, Brooklyn, NY 11210, USA",
+      space: "$3,400/sq ft",
     },
     {
       id: 5,
@@ -125,15 +124,15 @@ function App() {
       bath: 4,
       bed: 5,
       kitchen: 3,
-      build: 2011,
+      build: 2015,
       Description: {
         short:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit non.Lorem ipsum dolor.",
         long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laborum aspernatur ipsa! Corporis iure modi architecto nam labore similique. Nesciunt nam provident voluptate, mollitia quam reiciendis magnam ea accusantium. Vitae provident nisi deleniti. Recusandae eligendi voluptates, nam sequi, adipisci ipsam quibusdam quaerat consectetur magni inventore aliquid sint ipsum quos delectus eum laudantium expedita exercitationem. Alias fugiat recusandae eaque repellat quia.",
       },
-      price: "$450000",
-      address: "3002 Foster Ave, Brooklyn, NY 11210, USA",
-      space: "$2,800/sq ft",
+      price: "$500000",
+      address: "3009 Foster Ave, Brooklyn, NY 11210, USA",
+      space: "$3,500/sq ft",
     },
   ];
   return (
@@ -142,8 +141,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/mato" element={<Home1 />} /> */}
-            <Route path="/:id" element={<About/>} />
+            <Route path="/about/:id" element={<About/>} />
           </Routes>
         </BrowserRouter>
       </div>

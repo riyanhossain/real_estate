@@ -1,5 +1,5 @@
 import { TextField } from "@mui/material";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Col } from "react-bootstrap";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import BathroomIcon from "@mui/icons-material/Bathroom";
@@ -14,7 +14,7 @@ function H1S2(props) {
   const {build,car,bath,bed,kitchen} = props.house[0];
   console.log(build);
   const {images,image}=props.house[0]
-  let [imgQ, setImageQ] = useState(image);
+  let [imgQ, setImageQ] =useState(image);
   const handleClick = (i) => {
     setImageQ(i);
   };

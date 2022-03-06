@@ -36,7 +36,7 @@ function HS3() {
           {houses.map((gd) => (
             <Grid item xs={4} sm={4} md={4}>
               <Card sx={{ maxWidth: 345 }}>
-                <CardActionArea onClick={() => navigate(`/${gd.id}`)}>
+                <CardActionArea onClick={() => navigate(`/about/${gd.id}`)}>
                   <CardMedia
                     component="img"
                     height="266"
