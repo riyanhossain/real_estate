@@ -11,8 +11,10 @@ import "./H1.css";
 import HS3 from "../../../HomeSec3/HS3";
 
 function H1S2(props) {
-  const { images, image } = props.h1;
-  let [imgQ, setImageQ] = useState(image.home1);
+  const {build,car,bath,bed,kitchen} = props.h1;
+  console.log(build);
+  const {images,image}=props.h1
+  let [imgQ, setImageQ] = useState(image);
   const handleClick = (i) => {
     setImageQ(i);
   };
@@ -66,7 +68,7 @@ function H1S2(props) {
                 }}
               >
                 <DirectionsCarIcon />
-                <strong style={{ marginLeft: "5px" }}>{props.h1.car}</strong>
+                <strong style={{ marginLeft: "5px" }}>{car}</strong>
               </Col>
               <Col
                 style={{
@@ -76,7 +78,7 @@ function H1S2(props) {
                 }}
               >
                 <BathroomIcon />
-                <strong style={{ marginLeft: "5px" }}>{props.h1.bath}</strong>
+                <strong style={{ marginLeft: "5px" }}>{bath}</strong>
               </Col>
               <Col
                 style={{
@@ -86,7 +88,7 @@ function H1S2(props) {
                 }}
               >
                 <BedroomParentIcon />
-                <strong style={{ marginLeft: "5px" }}>{props.h1.bed}</strong>
+                <strong style={{ marginLeft: "5px" }}>{bed}</strong>
               </Col>
               <Col
                 style={{
@@ -97,7 +99,7 @@ function H1S2(props) {
               >
                 <KitchenIcon />
                 <strong style={{ marginLeft: "5px" }}>
-                  {props.h1.kitchen}
+                  {kitchen}
                 </strong>
               </Col>
               <Col
@@ -108,7 +110,7 @@ function H1S2(props) {
                 }}
               >
                 <CalendarTodayIcon />
-                <strong style={{ marginLeft: "5px" }}>{props.h1.build}</strong>
+                <strong style={{ marginLeft: "5px" }}>{build}</strong>
               </Col>
             </div>
           </div>

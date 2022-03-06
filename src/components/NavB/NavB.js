@@ -7,7 +7,7 @@ function NavB() {
   return (
     <Navbar collapseOnSelect expand="lg" >
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
             <img src={logo} alt="" srcset="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

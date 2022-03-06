@@ -1,8 +1,12 @@
 import React from 'react'
+import {
+  useParams
+} from "react-router-dom";
 
 function Home2() {
+  let {id}=useParams();
   return (
-    <div>Home2</div>
+    <div></div>
   )
 }
 
