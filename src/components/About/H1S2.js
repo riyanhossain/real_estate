@@ -8,12 +8,12 @@ import KitchenIcon from "@mui/icons-material/Kitchen";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import "./H1.css";
-import HS3 from "../../../HomeSec3/HS3";
+import HS3 from "../HomeSec3/HS3";
 
 function H1S2(props) {
-  const {build,car,bath,bed,kitchen} = props.h1;
+  const {build,car,bath,bed,kitchen} = props.house[0];
   console.log(build);
-  const {images,image}=props.h1
+  const {images,image}=props.house[0]
   let [imgQ, setImageQ] = useState(image);
   const handleClick = (i) => {
     setImageQ(i);

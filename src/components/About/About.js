@@ -1,7 +1,10 @@
 import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { dataContext } from '../../App';
-import Home1 from '../PAGE2/Home1/Home1'
+import Footer from '../Footer/Footer';
+import H1S2 from './H1S2';
+import NewPageSec1 from './NewPageSec1';
+import NewPageSec2 from './NewPageSec2';
 
 function About() {
     let {id}=useParams();
@@ -9,7 +12,9 @@ function About() {
     const house=houses.filter(h=>id==h.id)
   return (
     <div>
-        <Home1 house={house}/>
+      <NewPageSec1 house={house}/>
+      <H1S2 house={house}/>
+        <Footer />
     </div>
   )
 }
