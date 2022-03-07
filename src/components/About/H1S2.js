@@ -9,6 +9,8 @@ import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import "./H1.css";
 import HS3 from "../HomeSec3/HS3";
+import person2 from '../../Images/person2.png'
+import { Link } from "react-router-dom";
 
 function H1S2(props) {
   const {build,car,bath,bed,kitchen} = props.house[0];
@@ -31,13 +33,14 @@ function H1S2(props) {
     >
       <div style={{ width: "75%", display: "flex" }}>
         <Col xs={8}>
-          <img src={imgQ} alt="" style={{ width: "704px", height: "520px" }} />
+          <img src={imgQ} alt="" style={{ width: "704px", height: "520px",marginTop:'5%' }} />
           <div
             style={{
               width: "704px",
               display: "flex",
               alignItems: "center",
               justifyContent: "space-evenly",
+              marginTop:'2%'
             }}
           >
             {images.map((i) => (
@@ -250,15 +253,56 @@ function H1S2(props) {
         </Col>
 
         <Col xs={4}>
-          <TextField id="standard-basic" label="Standard" variant="standard" />
-          <TextField id="standard-basic" label="Standard" variant="standard" />
-          <TextField id="standard-basic" label="Standard" variant="standard" />
-          <TextField id="standard-basic" label="Standard" variant="standard" />
+          <div style={{height: '510px', width: '336px', backgroundColor: 'white', marginTop: '10%',borderRadius:'18px',display:'flex',justifyContent:'center',alignItems:'center'}}>
+            <div style={{width: '90%', backgroundColor: '',height:'93%'}}>
+              <div style={{height: '70px',backgroundColor: '#F5F5F5',borderRadius:'12px',display: 'flex',alignItems:'center'}}>
+                <img src={person2} alt="" style={{height:'40px',width:'40px',marginLeft: '5%'}}/>
+                <div style={{marginLeft: '4%'}}>
+                  <h6 style={{fontSize: '20px', margin: '0 !important'}}>Kayle Hall</h6>
+                  <a href="/" style={{fontWeight: 'bold', color:'orange', textDecoration:'none'}}>View profile</a>
+                </div>
+
+              </div>
+              <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginTop:'6%'}}> 
+                <input style={{width: '296px', height: '60px',borderRadius:'5px',border:'2px solid #EBEBEB'}} type="text" placeholder="Name" />
+              </div>
+              <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginTop:'3%'}}> 
+                <input style={{width: '296px', height: '60px',borderRadius:'5px',border:'2px solid #EBEBEB'}} type="text" placeholder="Phone" />
+              </div>
+              <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginTop:'3%'}}> 
+                <input style={{width: '296px', height: '60px',borderRadius:'5px',border:'2px solid #EBEBEB'}} type="text" placeholder="Email" />
+              </div>
+              <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginTop:'3%'}}> 
+                <textarea style={{width: '296px', height: '100px',borderRadius:'5px',border:'2px solid #EBEBEB'}} type="text" placeholder="Hello, I am interested in…" />
+              </div>
+              <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginTop:'6%'}}> 
+              <button style={{width:'100%',padding:'1.3rem'}} className="homeBtn">Learn more</button>
+              </div>
+              
+
+            </div>
+
+          </div>
         </Col>
+        
       </div>
+      
     </div>
-    <h2>Similar listings</h2>
+    <div style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop:'5%'
+      }}>
+        <div style={{ width: "75%" }}>
+          <h2>Similar listings</h2>
+
+        </div>
+
+    </div>
+    <div style={{marginBottom:'5%'}}>
     <HS3/>
+    </div>
     </div>
   );
 }
